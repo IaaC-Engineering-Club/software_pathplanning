@@ -1,4 +1,3 @@
-# Qt and QML modules
 qt5-default
 qtbase5-dev
 qtdeclarative5-dev
@@ -14,8 +13,6 @@ qml-module-qtcharts
 qml-module-qtquick-shapes
 qml-module-qt-labs-platform
 qml-module-qt-labs-folderlistmodel
-
-# GStreamer (optional but useful)
 gstreamer1.0-plugins-base
 gstreamer1.0-plugins-good
 gstreamer1.0-plugins-bad
@@ -25,8 +22,6 @@ gstreamer1.0-alsa
 gstreamer1.0-tools
 libgstreamer-plugins-base1.0-dev
 libgstreamer1.0-dev
-
-# Essential build tools
 git
 cmake
 build-essential
