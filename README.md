@@ -28,5 +28,23 @@ to test the hardware run #test_(file name).py file
 >>- A socket-based communication system may be considered for real-time use<br>
 >>- All heading corrections are based on real-world distances converted from pixels to cm<br>
 
+# QGroundControl on Raspberry Pi
+
+This repo contains a lightweight setup to build and run QGroundControl v4.2.8 on Raspberry Pi OS or Ubuntu 22.04 ARM64.
+
+## 🔧 Setup
+
+```bash
+sudo xargs -a requirements_qgc.txt apt install -y
+cd qgroundcontrol
+mkdir build && cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+make -j4
+#launch
+./QGroundControl
+
+Use LIBGL_ALWAYS_SOFTWARE=1 ./QGroundControl if it crashes on start.
+
+
 
 
